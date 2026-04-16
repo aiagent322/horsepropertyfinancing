@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Land Value &amp; Improvement Ratios for Horse Properties | HorsePropertyFinancing.com</title>
+<link rel="canonical" href="https://horsepropertyfinancing.com/land-value/">
+<meta name="description" content="How land value affects horse property financing. Land-to-improvement ratios lenders use, appraisal challenges on rural acreage, and what ratio makes a property financeable vs. a lender risk.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1a1410;--clay:#8b5e3c;--clay-lt:#c49a6c;--sand:#f5ede0;--sand-dk:#e8d9c4;--cream:#faf7f2;--white:#fff;--muted:#7a6a58;--border:#d9c9b4;--green:#2c5f2e;--max:1200px;--r:5px;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Jost',sans-serif;background:var(--cream);color:var(--ink);-webkit-font-smoothing:antialiased;}
+.page-hero{background:#1a2e1b;position:relative;overflow:hidden;padding:48px 20px 52px;text-align:center;}
+.page-hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 110%,rgba(139,94,60,.35) 0%,transparent 70%);pointer-events:none;}
+.breadcrumb{font-size:.78rem;color:rgba(255,255,255,.45);margin-bottom:14px;}
+.breadcrumb a{color:rgba(255,255,255,.55);text-decoration:none;}
+.page-hero h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:700;color:#fff;line-height:1.2;margin-bottom:16px;}
+.page-hero h1 em{font-style:italic;color:var(--clay-lt);}
+.page-hero-sub{font-size:clamp(.95rem,2vw,1.1rem);color:rgba(255,255,255,.75);font-weight:500;line-height:1.6;max-width:580px;margin:0 auto;}
+.content-wrap{max-width:860px;margin:0 auto;padding:48px 20px 64px;}
+.content-wrap h2{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;color:var(--ink);margin:40px 0 14px;}
+.content-wrap h3{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:var(--ink);margin:28px 0 10px;}
+.content-wrap p{font-size:.97rem;color:var(--ink);line-height:1.75;margin-bottom:16px;}
+.content-wrap ul{padding-left:20px;margin-bottom:16px;}
+.content-wrap ul li{font-size:.97rem;line-height:1.75;margin-bottom:8px;}
+.callout{background:var(--sand);border-left:4px solid var(--clay);border-radius:0 var(--r) var(--r) 0;padding:18px 22px;margin:28px 0;}
+.callout p{margin:0;font-size:.95rem;}
+.callout-warning{background:#fff3cd;border-left:4px solid #d4a017;}
+.ratio-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;margin:24px 0;}
+.ratio-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:20px 18px;text-align:center;}
+.ratio-pct{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:700;margin-bottom:4px;}
+.ratio-label{font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px;}
+.ratio-desc{font-size:.82rem;color:var(--muted);line-height:1.5;}
+.ratio-green{color:#2c7a2c;border-color:#2c7a2c;}
+.ratio-yellow{color:#b8860b;border-color:#d4a017;}
+.ratio-red{color:#c0392b;border-color:#c0392b;}
+.compare-table{width:100%;border-collapse:collapse;margin:24px 0;}
+.compare-table th{background:var(--ink);color:#fff;font-family:'Jost',sans-serif;font-size:.82rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:12px 16px;text-align:left;}
+.compare-table td{padding:12px 16px;font-size:.9rem;border-bottom:1px solid var(--border);vertical-align:top;}
+.compare-table tr:nth-child(even) td{background:var(--sand);}
+.qa-list{display:flex;flex-direction:column;gap:10px;margin-top:20px;}
+.qa-item{background:var(--white);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;}
+.qa-q{width:100%;background:none;border:none;text-align:left;font-family:'Jost',sans-serif;font-size:.95rem;font-weight:600;color:var(--ink);padding:18px 20px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;}
+.qa-q:hover{color:var(--clay);}
+.qa-icon{color:var(--clay);font-size:1.2rem;flex-shrink:0;transition:transform .2s;}
+.qa-item.open .qa-icon{transform:rotate(45deg);}
+.qa-a{display:none;padding:14px 20px 18px;font-size:.9rem;color:var(--muted);line-height:1.7;border-top:1px solid var(--sand-dk);}
+.qa-item.open .qa-a{display:block;}
+.channel-nav{background:var(--white);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:14px 0;overflow-x:auto;}
+.channel-nav-inner{max-width:var(--max);margin:0 auto;padding:0 20px;display:flex;gap:8px;white-space:nowrap;}
+.channel-nav a{font-family:'Jost',sans-serif;font-size:.82rem;font-weight:600;color:var(--muted);text-decoration:none;padding:7px 14px;border-radius:99px;border:1px solid var(--border);transition:background .15s,color .15s;}
+.channel-nav a:hover{background:var(--sand);color:var(--ink);}
+.channel-nav a.active{background:var(--clay);color:#fff;border-color:var(--clay);}
+.cta-bar{background:var(--green);padding:40px 20px;text-align:center;}
+.cta-bar h2{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:700;color:#fff;margin-bottom:10px;}
+.cta-bar p{font-size:.95rem;color:rgba(255,255,255,.75);margin-bottom:24px;max-width:480px;margin-left:auto;margin-right:auto;}
+.btn{display:inline-block;background:var(--clay);color:#fff;text-decoration:none;font-family:'Jost',sans-serif;font-size:.9rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:14px 28px;border-radius:var(--r);transition:background .2s;}
+.btn:hover{background:#a06b44;}
+footer{background:#162017;padding:24px 16px;text-align:center;}
+.footer-links{max-width:var(--max);margin:0 auto;padding-bottom:14px;display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:center;}
+.footer-links a{font-size:.78rem;color:rgba(255,255,255,.45);text-decoration:none;}
+.footer-copy{font-size:.75rem;color:rgba(255,255,255,.25);}
+.footer-copy a{color:rgba(255,255,255,.4);text-decoration:none;}
+@media(max-width:600px){.content-wrap{padding:32px 16px 48px;}.compare-table{font-size:.82rem;}}
+</style>
+</head>
+<body>
+
+<div class="channel-nav">
+  <div class="channel-nav-inner">
+    <a href="/mortgage-brokers/">🤝 Brokers</a>
+    <a href="/banks-credit-unions/">🏦 Banks</a>
+    <a href="/usda-farm-credit/">🌾 USDA</a>
+    <a href="/owner-financing/">🤠 Owner Finance</a>
+    <a href="/credit/">📊 Credit</a>
+    <a href="/llc/">🏢 LLC</a>
+    <a href="/depreciation/">📉 Depreciation</a>
+    <a href="/land-value/" class="active">🌄 Land Value</a>
+    <a href="/accelerated-payments/">⚡ Pay Down</a>
+    <a href="/loan-types/">📋 Loan Types</a>
+  </div>
+</div>
+
+<div class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div style="position:relative;z-index:1;max-width:var(--max);margin:0 auto;">
+    <div class="breadcrumb"><a href="/">HorsePropertyFinancing.com</a> › Land Value</div>
+    <h1>Land Value &amp; the<br><em>Improvement Ratio</em></h1>
+    <p class="page-hero-sub">The ratio of land value to improvement value on a horse property affects what you can borrow, which lenders will touch it, and how your appraisal comes in. Getting this right starts before you make an offer.</p>
+  </div>
+</div>
+
+<div class="content-wrap">
+
+  <h2>Why Land Value Matters to Lenders</h2>
+  <p>When a lender makes a mortgage on a horse property, they are ultimately secured by the property itself — if you default, they need to sell it to recover their loan balance. This means a lender's comfort with your loan depends heavily on whether the property can be resold quickly and at or above the loan balance. Land value is the foundation of that security calculation.</p>
+  <p>Raw land — acreage with minimal improvements — is the hardest real property to finance because it has no income-producing capability, a limited buyer pool, and no structure that a lender can depreciate to zero in a foreclosure scenario. As improvements are added — a house, a barn, fencing, an arena — the property becomes more financeable because the improvements make it usable and desirable to a broader range of buyers.</p>
+  <p>The ratio of land value to improvement value tells a lender how much of their collateral is in the form of raw dirt versus productive, usable improvements. Too much land value relative to improvements — especially in remote locations — makes conventional lenders nervous.</p>
+
+  <h2>Land-to-Improvement Ratios and What They Mean</h2>
+  <div class="ratio-grid">
+    <div class="ratio-card">
+      <div class="ratio-pct ratio-green">30/70</div>
+      <div class="ratio-label ratio-green">Ideal for Financing</div>
+      <div class="ratio-desc">30% land, 70% improvements. Strong improvement base relative to land. Most lenders comfortable. Good depreciation base. Easy appraisal comparables.</div>
+    </div>
+    <div class="ratio-card">
+      <div class="ratio-pct ratio-green">40/60</div>
+      <div class="ratio-label ratio-green">Conventional Range</div>
+      <div class="ratio-desc">40% land, 60% improvements. Generally acceptable to conventional and portfolio lenders. Standard for suburban horse properties with quality facilities.</div>
+    </div>
+    <div class="ratio-card">
+      <div class="ratio-pct ratio-yellow">55/45</div>
+      <div class="ratio-label ratio-yellow">Borderline</div>
+      <div class="ratio-desc">Land value exceeds improvements. Conventional lenders become cautious. Portfolio lenders and Farm Credit still comfortable. Common on larger rural acreage.</div>
+    </div>
+    <div class="ratio-card">
+      <div class="ratio-pct ratio-red">70/30</div>
+      <div class="ratio-label ratio-red">Land-Heavy</div>
+      <div class="ratio-desc">Land dominates the value. Conventional financing likely unavailable. Farm Credit or agricultural land loan required. Higher down payment typically needed.</div>
+    </div>
+  </div>
+
+  <div class="callout">
+    <p><strong>Context matters:</strong> These ratios are guidelines, not hard rules. A 70/30 land-to-improvement ratio on 200 acres of prime horse country in Colorado is very different from the same ratio on a remote 200-acre parcel with no road access. Market demand, location, water rights, and income potential all factor into how lenders view the collateral.</p>
+  </div>
+
+  <h2>How Lenders Actually Use the Ratio</h2>
+  <p>Most conventional lenders don't publish a hard land-to-improvement ratio threshold, but their underwriting guidelines reflect it indirectly. Fannie Mae guidelines note that the value of the site — the land — should not be disproportionate to the total appraised value, and many underwriters apply informal thresholds of 30–40% maximum land value for residential properties. When land exceeds that threshold, the loan may be declined, referred to a portfolio lender, or subject to a lower LTV limit.</p>
+
+  <h3>The Appraisal Problem</h3>
+  <p>The land-to-improvement ratio is most problematic at the appraisal stage. Appraisers establish value through comparable sales — finding similar properties that recently sold. On rural horse properties with large acreage, comparables are often scarce, geographically dispersed, or significantly different in composition. When an appraiser can't find good comps, they may apply manual adjustments that produce a value lower than the purchase price — causing the deal to fall short of the required loan-to-value ratio.</p>
+  <p>Properties with high land-to-improvement ratios are particularly prone to appraisal challenges because the appraiser must separately value the land component using land sales and the improvement component using cost or income approaches — and errors or conservatism in either component can compress the final value.</p>
+
+  <h2>What Ratio to Target When Buying</h2>
+  <p>For buyers seeking conventional or government-backed financing, properties where improvements represent at least 50–60% of total value are the safest targets. This means favoring properties with quality structures relative to acreage — a well-built 20-stall barn and covered arena on 40 acres finances more easily than raw 80 acres with a small storage shed.</p>
+  <p>For buyers using Farm Credit, agricultural land loans, or owner financing — where the ratio is less constraining — land-heavy properties are entirely viable. The key is matching your financing channel to the property's ratio before you make an offer.</p>
+
+  <table class="compare-table">
+    <tr><th>Property Type</th><th>Typical Land/Improvement Ratio</th><th>Best Financing Channel</th></tr>
+    <tr><td>Suburban equestrian property, quality facilities, 5–10 acres</td><td>25–40% land</td><td>Conventional, FHA, USDA</td></tr>
+    <tr><td>Rural horse property, good improvements, 20–50 acres</td><td>40–55% land</td><td>Conventional (portfolio), Farm Credit</td></tr>
+    <tr><td>Large ranch property, significant acreage, working operation</td><td>55–70% land</td><td>Farm Credit, commercial, owner finance</td></tr>
+    <tr><td>Raw agricultural land with minimal improvements</td><td>80–95% land</td><td>Agricultural land loan, Farm Credit, owner finance</td></tr>
+  </table>
+
+  <h2>Improving the Ratio — What Buyers Can Do</h2>
+  <p>If you're drawn to a land-heavy horse property and want better financing terms, improvements made before or shortly after closing can shift the ratio. A new barn, covered arena, or quality fencing increases the improvement value and reduces the effective land percentage. Farm Credit and portfolio lenders frequently finance construction and improvement loans alongside purchase loans — ask about combination purchase-improvement financing that wraps both into one loan. This approach lets you buy the acreage you want and improve your way to a better ratio over time.</p>
+
+  <h2>Frequently Asked Questions</h2>
+  <div class="qa-list">
+    <div class="qa-item">
+      <button class="qa-q" onclick="toggleQA(this)">How does the appraiser determine the land vs. improvement split? <span class="qa-icon">+</span></button>
+      <div class="qa-a">Appraisers use several approaches to establish the land value component of a horse property, and the method used depends on the available data for the specific market and property type. The most direct approach is the sales comparison method applied to land only — finding recent sales of vacant comparable land parcels in the same area and using those sales to estimate what the subject land would sell for if it were vacant. In active rural markets with sufficient vacant land sales, this can be straightforward. In remote areas with few or no comparable land sales, appraisers must use more judgment-intensive approaches. The allocation method uses national or regional studies of typical land-to-improvement ratios for the property type in that market. The extraction method estimates the cost to replace the improvements at today's prices and subtracts that from the total value to arrive at land value — essentially backing into the land value from the top down. On horse properties, the extraction method is frequently used because replacing a quality barn and arena with current construction costs is more estimable than finding land comps. The appraiser's professional judgment, experience with rural markets, and access to local data all influence the final allocation. Buyers who disagree with an appraisal's land allocation — either because it's too high or too low — can request a review or order a second appraisal. On high-value rural properties, getting the allocation right has significant implications for both financing and depreciation planning.</div>
+    </div>
+    <div class="qa-item">
+      <button class="qa-q" onclick="toggleQA(this)">Can I finance raw land and then build horse facilities? <span class="qa-icon">+</span></button>
+      <div class="qa-a">Yes — but the financing for raw land is distinctly different from a residential or agricultural improvement loan, and most buyers find the land acquisition and construction phases require different financing products. Raw land loans typically require 30–50% down payment, carry higher interest rates than improved property loans, and have shorter terms — 5 to 15 years — because lenders view undeveloped land as higher-risk collateral with limited income-producing capability. Farm Credit System associations are among the best sources for rural land loans and offer long-term fixed rates that most commercial banks don't match on raw agricultural land. Once you own the land, a construction loan finances the building of improvements — barn, house, arena, fencing, utilities. Construction loans are typically short-term (12 to 24 months), interest-only during the build phase, and convert to a permanent mortgage upon completion. Some lenders offer a combined land-and-construction loan that rolls both phases together, avoiding two separate closings. The practical sequence for most horse property buyers building from raw land: land acquisition loan at purchase, construction loan for improvements, permanent mortgage once the project is complete and the improved property can be appraised at its full developed value. Farm Credit associations frequently offer all three phases with continuity, which is a meaningful advantage over going to three separate lenders.</div>
+    </div>
+    <div class="qa-item">
+      <button class="qa-q" onclick="toggleQA(this)">Does water access affect how lenders value a horse property? <span class="qa-icon">+</span></button>
+      <div class="qa-a">Yes — significantly, and water is often the single most important factor in determining the value and financeability of a rural horse property beyond the improvements themselves. Water access takes several forms on rural properties: well water, municipal water service, surface water rights (stream or river access), irrigation rights, and shared water agreements. Each has different implications for lenders and appraisers. Properties with reliable, documented well water and sufficient well capacity for livestock are generally straightforward. Properties dependent on hauled water or with questionable well output create lender concern about the property's functional utility and future marketability. Water rights — particularly in western states where prior appropriation law governs water — can add substantial value to a horse property and are carefully reviewed by appraisers and lenders. A property with senior water rights that support irrigation of pasture is fundamentally more valuable than one without. Shared water agreements — where multiple parcels use a single well or water source — require careful review of the legal documentation before a lender will accept the collateral. On large rural horse properties, the lender will review the well permit, water test results, and often require a well output test to confirm the property can support the proposed use. In drought-prone regions, water access and storage capacity are increasingly important factors in both value and lender acceptance. Always disclose water source details to your lender and appraiser at the beginning of the process, not at the last minute.</div>
+    </div>
+    <div class="qa-item">
+      <button class="qa-q" onclick="toggleQA(this)">What happens if the appraisal comes in below the purchase price? <span class="qa-icon">+</span></button>
+      <div class="qa-a">A low appraisal on a horse property is one of the most common and frustrating obstacles in rural real estate transactions, and it creates a specific financing problem: the lender calculates your loan amount based on the lower of the purchase price or appraised value. If you agreed to pay $700,000 and the property appraises at $620,000, the lender calculates your loan-to-value ratio against $620,000 — meaning you need to either bring an additional $80,000 in cash to closing, renegotiate the purchase price down to the appraised value, or find a different lender whose appraiser produces a different result. You have several options when this happens. First, review the appraisal carefully — rural appraisals on horse properties are complex and errors or incorrect comparable selection are not uncommon. If you can identify specific errors or better comparable sales the appraiser overlooked, your real estate agent can submit a rebuttal with supporting data. Second, request a second appraisal — some lenders allow this, particularly when the first appraisal is questionable. Third, renegotiate the price with the seller based on the appraised value — sellers who are motivated and understand the market may agree to adjust. Fourth, switch to a lender who uses a different appraisal management company or uses in-house appraisers experienced with rural properties — Farm Credit associations, for example, have staff appraisers with specific agricultural expertise who often produce more accurate valuations on equestrian properties than general-rotation appraisers from large appraisal management companies.</div>
+    </div>
+  </div>
+
+</div>
+
+<div class="cta-bar">
+  <h2>Find a Horse Property Agent</h2>
+  <p>A specialist agent understands land value, appraisal challenges, and how to structure your offer for the best financing outcome.</p>
+  <a href="https://horsepropertyagents.com" class="btn" target="_blank">Browse Agent Directory →</a>
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="/">Home</a>
+    <a href="/depreciation/">Depreciation</a>
+    <a href="/land-value/">Land Value</a>
+    <a href="/accelerated-payments/">Accelerated Payments</a>
+    <a href="/loan-types/">Loan Types</a>
+    <a href="/llc/">LLC</a>
+    <a href="/1031-exchange/">1031 Exchange</a>
+    <a href="/credit/">Credit Guide</a>
+    <a href="https://horsepropertyagents.com" target="_blank">Find an Agent</a>
+  </div>
+  <div class="footer-copy">&copy; 2026 <a href="https://bridleandbit.com" target="_blank">Bridle &amp; Bit Magazine</a> &nbsp;&middot;&nbsp; HorsePropertyFinancing.com</div>
+</footer>
+<script>
+function toggleQA(btn){var item=btn.closest('.qa-item');var wasOpen=item.classList.contains('open');document.querySelectorAll('.qa-item.open').forEach(function(el){el.classList.remove('open');});if(!wasOpen)item.classList.add('open');}
+</script>
+</body>
+</html>
