@@ -129,9 +129,26 @@ footer { background:#162017; padding:24px 16px; text-align:center; }
   .channel-grid { grid-template-columns:1fr; }
   .credit-grid { grid-template-columns:1fr; }
 }
+.site-header{background:#1a2e1b;position:sticky;top:0;z-index:200;box-shadow:0 2px 12px rgba(0,0,0,0.2);}
+.site-header-inner{max-width:var(--max);margin:0 auto;padding:10px 16px;display:flex;align-items:center;justify-content:space-between;}
+.site-header-logo{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:#fff;text-decoration:none;letter-spacing:.01em;}
+.site-header-logo em{font-style:italic;color:var(--clay-lt);}
+.bb-logo-link{display:flex;align-items:center;line-height:0;flex-shrink:0;}
+@media(max-width:599px){.bb-logo-link{display:none;}}
+@media(min-width:600px){.site-header-inner{padding:10px 24px;}}
 </style>
 </head>
 <body>
+
+<!-- STICKY HEADER -->
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="/" class="site-header-logo">Horse Property <em>Financing</em></a>
+    <a href="https://www.bridleandbit.com" target="_blank" rel="noopener noreferrer" class="bb-logo-link">
+      <img src="https://imagedelivery.net/9VlM7Y9GaQMXOu5Ypg50yA/bb-hp-0/public" alt="Bridle &amp; Bit Magazine" style="height:36px;width:auto;">
+    </a>
+  </div>
+</header>
 
 <!-- HERO -->
 <div class="hero">
