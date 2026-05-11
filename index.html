@@ -147,6 +147,11 @@ footer { background:#162017; padding:24px 16px; text-align:center; }
 .bb-logo-link{display:none;align-items:center;line-height:0;flex-shrink:0;}
 @media(min-width:600px){.bb-logo-link{display:flex;}}
 @media(min-width:600px){.site-header-inner{padding:10px 24px;}}
+/* ── FOCUS VISIBLE — keyboard navigation ── */
+:focus-visible { outline:3px solid var(--clay); outline-offset:2px; border-radius:3px; }
+.btn-primary:focus-visible,.btn-outline:focus-visible { outline-color:#fff; outline-offset:3px; }
+.qa-chip:focus-visible { outline-offset:-2px; }
+.channel-card:focus-visible,.crosslink-card:focus-visible { outline-offset:0; border-radius:var(--r); }
 </style>
 </head>
 <body>
@@ -156,7 +161,7 @@ footer { background:#162017; padding:24px 16px; text-align:center; }
   <div class="site-header-inner">
     <a href="/" class="site-header-logo">Horse Property <em>Financing</em></a>
     <a href="https://www.bridleandbit.com" target="_blank" rel="noopener noreferrer" class="bb-logo-link">
-      <img src="https://imagedelivery.net/9VlM7Y9GaQMXOu5Ypg50yA/bb-hp-0/public" alt="Bridle &amp; Bit Magazine" style="height:36px;width:auto;">
+      <img src="https://imagedelivery.net/9VlM7Y9GaQMXOu5Ypg50yA/bb-hp-0/public" alt="Bridle &amp; Bit Magazine" style="height:36px;width:auto;" loading="lazy">
     </a>
   </div>
 </header>
