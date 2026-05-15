@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Horse Property Financing</title>
+  <meta name="description" content="Contact Horse Property Financing — questions about mortgages, USDA loans, owner financing, and more.">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink:     #1a1410;
+      --clay:    #8b5e3c;
+      --clay-lt: #c49a6c;
+      --sand:    #f5ede0;
+      --cream:   #faf7f2;
+      --white:   #ffffff;
+      --muted:   #7a6a58;
+      --border:  #d9c9b4;
+      --green:   #2c5f2e;
+      --hdr:     #1a2e1b;
+      --r:       5px;
+      --max:     1200px;
+    }
+    *,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:'Jost',sans-serif; background:var(--cream); color:var(--ink); line-height:1.6; }
+
+    /* ── HEADER ── */
+    .site-header {
+      background: var(--hdr);
+      position: sticky; top: 0; z-index: 200;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+    }
+    .site-header-inner {
+      max-width: var(--max); margin: 0 auto;
+      padding: 10px 16px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .header-left { display: flex; align-items: center; gap: 12px; }
+    .site-header-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem; font-weight: 700;
+      color: #fff; text-decoration: none; letter-spacing: .01em;
+    }
+    .site-header-logo em { font-style: italic; color: var(--clay-lt); }
+    .contact-btn {
+      display: inline-flex; align-items: center; gap: 5px;
+      background: var(--clay); color: #fff;
+      border-radius: var(--r); padding: 6px 13px;
+      font-family: 'Jost', sans-serif;
+      font-size: .78rem; font-weight: 600;
+      text-decoration: none; white-space: nowrap;
+      transition: background .15s;
+    }
+    .contact-btn:hover { background: var(--clay-lt); }
+    .bb-logo-link { display: none; align-items: center; line-height: 0; flex-shrink: 0; }
+    @media(min-width:600px) {
+      .bb-logo-link { display: flex; }
+      .site-header-inner { padding: 10px 24px; }
+    }
+
+    /* ── HERO ── */
+    .page-hero {
+      background: var(--hdr);
+      padding: 48px 16px 40px; text-align: center; color: #fff;
+    }
+    .page-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.6rem,4vw,2.4rem); font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .page-hero p { font-size: 1rem; opacity: 0.8; max-width: 500px; margin: 0 auto; }
+
+    /* ── CONTACT WRAP ── */
+    .contact-wrap {
+      max-width: 660px; margin: 48px auto 64px; padding: 0 16px;
+    }
+    .info-strip {
+      display: flex; gap: 24px; flex-wrap: wrap;
+      justify-content: center; margin-bottom: 28px;
+      font-size: 0.84rem; color: var(--muted);
+    }
+    .info-strip span { display: flex; align-items: center; gap: 6px; }
+
+    .contact-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 8px; padding: 32px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    }
+    .form-group { margin-bottom: 20px; }
+    .form-group label {
+      display: block; font-size: 0.85rem;
+      font-weight: 600; color: var(--ink); margin-bottom: 6px;
+    }
+    .form-group label .req { color: var(--clay); margin-left: 2px; }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%; padding: 10px 12px;
+      border: 1px solid var(--border); border-radius: var(--r);
+      font-size: 0.95rem; color: var(--ink);
+      background: var(--white); font-family: 'Jost', sans-serif;
+      transition: border-color 0.2s;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none; border-color: var(--clay);
+      box-shadow: 0 0 0 3px rgba(139,94,60,0.12);
+    }
+    .form-group textarea { resize: vertical; min-height: 130px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    @media(max-width:520px){ .form-row { grid-template-columns: 1fr; } }
+
+    .submit-btn {
+      width: 100%; padding: 13px;
+      background: var(--clay); color: #fff;
+      border: none; border-radius: var(--r);
+      font-size: 1rem; font-weight: 700;
+      font-family: 'Jost', sans-serif;
+      cursor: pointer; transition: background 0.2s; margin-top: 4px;
+    }
+    .submit-btn:hover:not(:disabled) { background: var(--clay-lt); }
+    .submit-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+    .form-msg {
+      display: none; margin-top: 16px;
+      padding: 14px 16px; border-radius: var(--r);
+      font-size: 0.9rem; font-weight: 500;
+    }
+    .form-msg.success { display:block; background:#f0fdf4; color:#15803d; border:1px solid #86efac; }
+    .form-msg.error   { display:block; background:#fef2f2; color:#991b1b; border:1px solid #fca5a5; }
+
+    /* ── FOOTER ── */
+    .site-footer {
+      background: var(--hdr); color: rgba(255,255,255,0.6);
+      text-align: center; padding: 20px 16px; font-size: 0.8rem;
+    }
+    .site-footer a { color: rgba(255,255,255,0.8); text-decoration: none; }
+    .site-footer a:hover { color: #fff; }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <div class="header-left">
+      <a href="/contact/" class="contact-btn">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        Contact Us
+      </a>
+      <a href="/" class="site-header-logo">Horse Property <em>Financing</em></a>
+    </div>
+    <a href="https://www.bridleandbit.com" target="_blank" rel="noopener noreferrer" class="bb-logo-link">
+      <img src="https://imagedelivery.net/9VlM7Y9GaQMXOu5Ypg50yA/bb-hp-0/public" alt="Bridle &amp; Bit Magazine" style="height:36px;width:auto;" loading="lazy">
+    </a>
+  </div>
+</header>
+
+<section class="page-hero">
+  <h1>Contact Us</h1>
+  <p>Questions about financing your horse property? We connect buyers with the right lenders, loan types, and strategies.</p>
+</section>
+
+<div class="contact-wrap">
+  <div class="info-strip">
+    <span>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      Responds within 24 hours
+    </span>
+    <span>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      Your info is never sold
+    </span>
+  </div>
+
+  <div class="contact-card">
+    <form id="contactForm">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Name <span class="req">*</span></label>
+          <input type="text" id="name" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" placeholder="(555) 000-0000">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email <span class="req">*</span></label>
+        <input type="email" id="email" placeholder="you@example.com" required>
+      </div>
+      <div class="form-group">
+        <label for="subject">Subject <span class="req">*</span></label>
+        <select id="subject" required>
+          <option value="">Select a topic…</option>
+          <option>Horse Property Mortgage</option>
+          <option>USDA Farm Loan</option>
+          <option>Owner Financing Options</option>
+          <option>Private Lender Options</option>
+          <option>1031 Exchange</option>
+          <option>LLC / Trust Structure</option>
+          <option>Land Value &amp; Appraisal</option>
+          <option>Credit Questions</option>
+          <option>Co-Signer Options</option>
+          <option>General Financing Question</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">Message <span class="req">*</span></label>
+        <textarea id="message" placeholder="Tell us about your financing situation — property type, state, loan amount if known…" required></textarea>
+      </div>
+      <button type="submit" class="submit-btn" id="submitBtn">Send Message</button>
+      <div class="form-msg" id="formMsg"></div>
+    </form>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <p>© 2026 HorsePropertyFinancing.com &nbsp;·&nbsp; A <a href="https://www.bridleandbit.com" target="_blank" rel="noopener">Bridle &amp; Bit Magazine</a> property</p>
+</footer>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const btn = document.getElementById('submitBtn');
+  const msg = document.getElementById('formMsg');
+  btn.disabled = true;
+  btn.textContent = 'Sending…';
+  msg.className = 'form-msg';
+
+  const payload = {
+    name:        document.getElementById('name').value.trim(),
+    email:       document.getElementById('email').value.trim(),
+    phone:       document.getElementById('phone').value.trim(),
+    subject:     document.getElementById('subject').value,
+    message:     document.getElementById('message').value.trim(),
+    source_site: 'HorsePropertyFinancing.com'
+  };
+
+  try {
+    const res  = await fetch('https://contact-form.bridleandbit.workers.dev', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(payload)
+    });
+    const data = await res.json();
+    if (data.success) {
+      msg.className = 'form-msg success';
+      msg.textContent = "Message sent! We'll be in touch within 24 hours.";
+      this.reset();
+    } else {
+      throw new Error(data.error || 'Submission failed');
+    }
+  } catch(err) {
+    msg.className = 'form-msg error';
+    msg.textContent = 'Something went wrong. Please try again or email bridleandbit@aol.com directly.';
+  } finally {
+    btn.disabled = false;
+    btn.textContent = 'Send Message';
+  }
+});
+</script>
+</body>
+</html>
